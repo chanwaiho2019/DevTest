@@ -7,12 +7,16 @@ html {
     margin: 0px;
     padding: 0px;
  }
+p {
+    font-weight: 500;
+    line-height: 1.45;
+}
 a {
     text-decoration: none;
+    font-weight: 700;
 }
 .cta {
     display: inline-block;
-    border: 2px solid  #de6c17;
     color:  #de6c17;
     padding: 10px 30px;
     margin-top: 30px;
@@ -33,7 +37,7 @@ a {
     background-position: top center;
     position: relative;
     z-index: 1;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -44,7 +48,7 @@ a {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-image: linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.5) 65%);
     opacity: 0.5;
     z-index: -1;
 }
@@ -71,7 +75,8 @@ a {
 #hero a {
     color: white;
     background-color: #de6c17;
-    border-radius: 2px;
+    border-radius: 4px;
+    height: 2.4rem;
 }
 #hero img {
     display: flex;
@@ -91,8 +96,9 @@ a {
     padding: 100px 0;
 }
 #services .service-top .section-title {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    color: #36413c;
 }
 #services .service-top p {
     font-size: 2rem;
@@ -133,20 +139,20 @@ a {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    color:  black;  
     max-width: 300px;
 }
 #services .service-info h1 {
-    font-size: 2.5rem;
+    color: #36413c;
+    font-size: 2.4rem;
 }
 #services .service-info p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #5e6e66;;
 }
 #services .service-info a {
     color: #de6c17;
     margin: 20px 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 /* end of services section */
 
@@ -154,23 +160,23 @@ a {
 @media only screen and (min-width: 492px) {
     /* hero section */
     #hero {
-        height: 70vh;
+        height: 80vh;
     }
     #hero .hero h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     #hero .hero p {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         width: 60%;
     }
     /* end of hero secction */
 
     /* services section */
     #services .service-top .section-title {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     #services .service-top p {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin: 20px 8%;
     }
     #services .service-item {
@@ -207,6 +213,7 @@ a {
         justify-content: center;
         min-height: 20vh;
         height: 100vh;
+        margin-bottom: 50px;
     }
     #services .service-bottom {
         width: 100%;
@@ -225,10 +232,10 @@ a {
         font-size: 2.5rem;
     }
     #services .service-info p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     #services .service-info a{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 /* end of media query for Desktop */
